@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find Mentors | MentorSphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-page">
+
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar">
+
+        <a href="dashboard.html" class="sidebar-logo">
+
+    <div class="logo-icon">
+        <img src="640e9575-56cb-4ac4-ae9b-efec40d8efc4.png" alt="MentorSphere Logo">
+    </div>
+
+    <span>MentorSphere</span>
+
+</a>
+
+
+        <!-- NAVIGATION -->
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="mentor.html" class="sidebar-link active">
+                <span>👨‍🏫</span>
+                Find Mentors
+            </a>
+
+            <a href="discussion.html" class="sidebar-link">
+                <span>💬</span>
+                Discussions
+            </a>
+
+            <a href="resource.html" class="sidebar-link">
+                <span>📚</span>
+                Resources
+            </a>
+
+            <a href="placement.html" class="sidebar-link">
+                <span>🎯</span>
+                Placements
+            </a>
+
+            <a href="profile.html" class="sidebar-link">
+                <span>👤</span>
+                Profile
+            </a>
+
+        </nav>
+
+
+        <!-- BOTTOM NAVIGATION -->
+        <div class="sidebar-bottom">
+
+            <a href="notifications.html" class="sidebar-link">
+                <span>🔔</span>
+                Notifications
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+
+        <!-- TOP BAR -->
+        <header class="dashboard-topbar">
+
+            <div>
+                <p class="page-label">MENTOR DISCOVERY</p>
+                <h1>Find the right mentor ✨</h1>
+            </div>
+
+
+            <!-- CLICKABLE PROFILE -->
+            <a href="profile.html" class="topbar-profile">
+
+                <div class="profile-avatar">H</div>
+
+                <div>
+                    <strong id="userName">Honey</strong>
+                    <span id="userRole">Junior Student</span>
+                </div>
+
+            </a>
+
+        </header>
+
+
+        <!-- INTRO -->
+        <section class="mentor-hero">
+
+            <div>
+
+                <span class="mentor-badge">
+                    ✦ Personalized recommendations
+                </span>
+
+                <h2>
+                    Learn from people who have
+                    <span>already been there.</span>
+                </h2>
+
+                <p>
+                    Discover seniors and alumni based on your skills,
+                    interests and career goals.
+                </p>
+
+            </div>
+
+            <div class="mentor-hero-icon">
+                ✦
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH + FILTER -->
+        <section class="mentor-controls">
+
+            <div class="mentor-search">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    placeholder="Search mentors by name or skill..."
+                >
+
+            </div>
+
+
+            <div class="mentor-filters">
+
+                <button class="filter-btn active-filter">
+                    All
+                </button>
+
+                <button class="filter-btn">
+                    Development
+                </button>
+
+                <button class="filter-btn">
+                    DSA
+                </button>
+
+                <button class="filter-btn">
+                    AI / ML
+                </button>
+
+                <button class="filter-btn">
+                    Placements
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECOMMENDED MENTORS -->
+        <section class="mentors-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Recommended for you</h2>
+
+                    <p>
+                        Based on your interests and learning goals.
+                    </p>
+                </div>
+
+                <span class="mentor-count">
+                    4 mentors available
+                </span>
+
+            </div>
+
+
+            <div class="mentors-grid">
+
+
+                <!-- MENTOR 1 -->
+                <article class="mentor-card">
+
+                    <div class="mentor-card-top">
+
+                        <div class="mentor-profile">
+
+                            <div class="mentor-avatar purple-avatar">
+                                R
+                            </div>
+
+                            <div>
+                                <h3>Rahul Sharma</h3>
+                                <p>Senior Student</p>
+                            </div>
+
+                        </div>
+
+                        <span class="match-badge">
+                            94% Match
+                        </span>
+
+                    </div>
+
+                    <p class="mentor-description">
+                        Helping students master Java, Backend Development
+                        and Data Structures.
+                    </p>
+
+                    <div class="mentor-skills">
+                        <span>Java</span>
+                        <span>Backend</span>
+                        <span>DSA</span>
+                    </div>
+
+                    <button class="connect-btn">
+                        Connect →
+                    </button>
+
+                </article>
+
+
+                <!-- MENTOR 2 -->
+                <article class="mentor-card">
+
+                    <div class="mentor-card-top">
+
+                        <div class="mentor-profile">
+
+                            <div class="mentor-avatar blue-avatar">
+                                A
+                            </div>
+
+                            <div>
+                                <h3>Anjali Mehta</h3>
+                                <p>Alumni</p>
+                            </div>
+
+                        </div>
+
+                        <span class="match-badge">
+                            89% Match
+                        </span>
+
+                    </div>
+
+                    <p class="mentor-description">
+                        Guiding students in web development, projects
+                        and building strong portfolios.
+                    </p>
+
+                    <div class="mentor-skills">
+                        <span>Web Dev</span>
+                        <span>React</span>
+                        <span>Projects</span>
+                    </div>
+
+                    <button class="connect-btn">
+                        Connect →
+                    </button>
+
+                </article>
+
+
+                <!-- MENTOR 3 -->
+                <article class="mentor-card">
+
+                    <div class="mentor-card-top">
+
+                        <div class="mentor-profile">
+
+                            <div class="mentor-avatar orange-avatar">
+                                A
+                            </div>
+
+                            <div>
+                                <h3>Aman Verma</h3>
+                                <p>Senior Student</p>
+                            </div>
+
+                        </div>
+
+                        <span class="match-badge">
+                            86% Match
+                        </span>
+
+                    </div>
+
+                    <p class="mentor-description">
+                        Exploring Artificial Intelligence, Machine Learning
+                        and practical ML projects.
+                    </p>
+
+                    <div class="mentor-skills">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>AI</span>
+                    </div>
+
+                    <button class="connect-btn">
+                        Connect →
+                    </button>
+
+                </article>
+
+
+                <!-- MENTOR 4 -->
+                <article class="mentor-card">
+
+                    <div class="mentor-card-top">
+
+                        <div class="mentor-profile">
+
+                            <div class="mentor-avatar green-avatar">
+                                K
+                            </div>
+
+                            <div>
+                                <h3>Karan Singh</h3>
+                                <p>Alumni</p>
+                            </div>
+
+                        </div>
+
+                        <span class="match-badge">
+                            82% Match
+                        </span>
+
+                    </div>
+
+                    <p class="mentor-description">
+                        Helping students prepare for placements, interviews
+                        and their transition into industry.
+                    </p>
+
+                    <div class="mentor-skills">
+                        <span>Placements</span>
+                        <span>Interviews</span>
+                        <span>Career</span>
+                    </div>
+
+                    <button class="connect-btn">
+                        Connect →
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

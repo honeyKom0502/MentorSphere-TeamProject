@@ -1,0 +1,12 @@
+import React, { useState } from 'react';
+import { Video, ExternalLink, ShieldAlert } from 'lucide-react';
+
+export function VideoPanel({ roomKey, displayName = 'MentorSphere participant' }) {
+  const [joined, setJoined] = useState(false);
+  const room = `mentorsphere-${String(roomKey || 'demo').replace(/[^a-zA-Z0-9-]/g, '')}`;
+  const meetingUrl = `https://meet.jit.si/${room}#userInfo.displayName=${encodeURIComponent(displayName)}&config.prejoinPageEnabled=true`;
+  return <section className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-950">
+    <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 p-4"><div className="flex items-center gap-2"><Video className="text-orange-400" size={19}/><div><h3 className="font-bold text-white">Video room</h3><p className="text-xs text-slate-400">A unique meeting room for this session</p></div></div><a href={meetingUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-slate-700 px-3 py-2 text-sm text-slate-200 hover:border-orange-400"><ExternalLink size={15}/> Open in new tab</a></div>
+    {!joined ? <div className="p-6 text-center"><div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-500/10 text-orange-400"><Video size={24}/></div><h4 className="font-bold text-white">Ready to meet?</h4><p className="mx-auto mt-2 max-w-lg text-sm text-slate-400">Start the video meeting when both participants are ready. Camera and microphone permissions may be required.</p><button onClick={() => setJoined(true)} className="mt-4 rounded-xl bg-orange-500 px-5 py-2.5 font-bold text-white hover:bg-orange-400">Join video room</button><div className="mx-auto mt-4 flex max-w-xl items-start gap-2 rounded-lg bg-amber-500/10 p-3 text-left text-xs text-amber-200"><ShieldAlert size={16} className="mt-0.5 shrink-0"/><span>Exhibition integration uses the public Jitsi Meet service. Do not use it for confidential conversations or treat it as a private, institution-managed meeting service.</span></div></div> : <div className="bg-black"><iframe title="MentorSphere video meeting" src={meetingUrl} allow="camera; microphone; fullscreen; display-capture; autoplay" referrerPolicy="no-referrer" className="h-[520px] w-full border-0"/><p className="p-2 text-center text-xs text-slate-500">If the embedded room is blocked by browser settings, use “Open in new tab”.</p></div>}
+  </section>;
+}

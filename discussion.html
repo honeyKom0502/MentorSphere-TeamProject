@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discussions | MentorSphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <a href="dashboard.html" class="sidebar-logo">
+
+            <div class="logo-icon">M</div>
+
+            <span>MentorSphere</span>
+
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span>⌂</span>
+                Dashboard
+            </a>
+            
+
+            <a href="mentor.html">
+                <span>👨‍🏫</span>
+                Find Mentors
+            </a>
+
+            <a href="discussion.html" class="active">
+                <span>💬</span>
+                Discussions
+            </a>
+
+            <a href="resource.html">
+                <span>📚</span>
+                Resources
+            </a>
+
+            <a href="placement.html">
+                <span>🎯</span>
+                Placements
+            </a>
+
+            <a href="profile.html" class="active">
+            <span>👤</span>
+            Profile
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+                <span>🔔</span>
+                Notifications
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-area">
+
+
+        <!-- TOP BAR -->
+
+        <div class="page-top">
+
+            <div>
+
+                <p class="page-label">
+                    COMMUNITY
+                </p>
+
+                <h1>
+                    Discussions 💬
+                </h1>
+
+            </div>
+
+
+           <a href="profile.html"
+   class="user-profile"
+   style="text-decoration: none; color: inherit; cursor: pointer;">
+
+    <div class="user-avatar" id="userAvatar">
+        H
+    </div>
+
+    <div>
+        <strong id="userName">
+            Honey Kumari
+        </strong>
+
+        <span id="userRole">
+            Senior Student
+        </span>
+    </div>
+
+</a>
+
+        </div>
+
+
+
+        <!-- HERO SECTION -->
+
+        <section class="discussion-hero">
+
+            <div>
+
+                <div class="hero-badge">
+                    ✦ Learn together
+                </div>
+
+                <h2>
+                    Ask questions.<br>
+                    <span>Grow together.</span>
+                </h2>
+
+                <p>
+                    Connect with seniors and alumni, ask doubts,
+                    share knowledge and learn from the community.
+                </p>
+
+            </div>
+
+
+            <button class="ask-question-btn">
+                + Ask a Question
+            </button>
+
+        </section>
+        <!-- EXPLORE CHANNELS -->
+<section class="channels-section">
+
+    <div class="section-header">
+
+        <div>
+            <h2>Explore Channels</h2>
+            <p>Join communities based on your interests.</p>
+        </div>
+
+        <button class="create-channel-btn" id="createChannelBtn">
+            + Create Channel
+        </button>
+
+    </div>
+
+
+    <!-- CHANNEL CARDS -->
+    <div class="channels-grid">
+
+        <!-- DSA -->
+        <div class="channel-card">
+
+            <div class="channel-card-top">
+
+                <div class="channel-icon">
+                    🧠
+                </div>
+
+                <div class="channel-info">
+                    <h3>DSA</h3>
+                    <p>Data Structures and Algorithms</p>
+                </div>
+
+            </div>
+
+            <p class="channel-description">
+                Practice problems, discuss concepts and prepare for coding interviews.
+            </p>
+
+            <div class="channel-footer">
+
+                <span class="member-count">
+                    <strong>85</strong> / 140 Members
+                </span>
+
+                <button class="join-channel-btn">
+                    Join Channel
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DEVELOPMENT -->
+        <div class="channel-card">
+
+            <div class="channel-card-top">
+
+                <div class="channel-icon">
+                    💻
+                </div>
+
+                <div class="channel-info">
+                    <h3>Development</h3>
+                    <p>Web and Software Development</p>
+                </div>
+
+            </div>
+
+            <p class="channel-description">
+                Learn development, build projects and discuss modern technologies.
+            </p>
+
+            <div class="channel-footer">
+
+                <span class="member-count">
+                    <strong>120</strong> / 140 Members
+                </span>
+
+                <button class="join-channel-btn">
+                    Join Channel
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- AI / ML -->
+        <div class="channel-card">
+
+            <div class="channel-card-top">
+
+                <div class="channel-icon">
+                    🤖
+                </div>
+
+                <div class="channel-info">
+                    <h3>AI / ML</h3>
+                    <p>Artificial Intelligence & Machine Learning</p>
+                </div>
+
+            </div>
+
+            <p class="channel-description">
+                Explore AI, machine learning concepts and practical projects.
+            </p>
+
+            <div class="channel-footer">
+
+                <span class="member-count">
+                    <strong>64</strong> / 140 Members
+                </span>
+
+                <button class="join-channel-btn">
+                    Join Channel
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PLACEMENTS -->
+        <div class="channel-card">
+
+            <div class="channel-card-top">
+
+                <div class="channel-icon">
+                    🎯
+                </div>
+
+                <div class="channel-info">
+                    <h3>Placements</h3>
+                    <p>Career and Interview Preparation</p>
+                </div>
+
+            </div>
+
+            <p class="channel-description">
+                Prepare for placements, interviews, resumes and career opportunities.
+            </p>
+
+            <div class="channel-footer">
+
+                <span class="member-count">
+                    <strong>98</strong> / 140 Members
+                </span>
+
+                <button class="join-channel-btn">
+                    Join Channel
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- FILTER SECTION -->
+
+        <div class="discussion-toolbar">
+
+            <input
+                type="text"
+                id="discussionSearch"
+                placeholder="🔍 Search discussions..."
+            >
+
+
+            <div class="discussion-filters">
+
+                <button class="filter-btn active">
+                    All
+                </button>
+
+                <button class="filter-btn">
+                    DSA
+                </button>
+
+                <button class="filter-btn">
+                    Development
+                </button>
+
+                <button class="filter-btn">
+                    AI / ML
+                </button>
+
+                <button class="filter-btn">
+                    Placements
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- DISCUSSION HEADER -->
+
+        <div class="discussion-heading">
+
+            <div>
+
+                <h2>
+                    Recent discussions
+                </h2>
+
+                <p>
+                    Learn from questions asked by the community.
+                </p>
+
+            </div>
+
+
+            <span class="discussion-count">
+                3 discussions
+            </span>
+
+        </div>
+
+
+
+        <!-- DISCUSSION LIST -->
+
+        <section class="discussion-list">
+
+
+            <!-- DISCUSSION 1 -->
+
+            <div class="discussion-card">
+
+                <div class="discussion-avatar purple">
+                    H
+                </div>
+
+
+                <div class="discussion-content">
+
+                    <div class="discussion-meta">
+
+                        <strong>
+                            Honey Kumari
+                        </strong>
+
+                        <span>
+                            • Junior Student
+                        </span>
+
+                        <span>
+                            • 10 min ago
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        How to crack DSA? 🚀
+                    </h3>
+
+
+                    <p>
+                        I have started learning DSA but I'm confused
+                        about the right roadmap. Should I focus on
+                        concepts first or start solving problems?
+                    </p>
+
+
+                    <div class="discussion-tags">
+
+                        <span>DSA</span>
+
+                        <span>Roadmap</span>
+
+                    </div>
+
+
+                    <div class="discussion-actions">
+
+                        <button>
+                            💬 12 Answers
+                        </button>
+
+                        <button>
+                            ♡ Helpful
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DISCUSSION 2 -->
+
+            <div class="discussion-card">
+
+                <div class="discussion-avatar blue">
+                    A
+                </div>
+
+
+                <div class="discussion-content">
+
+                    <div class="discussion-meta">
+
+                        <strong>
+                            Anjali Mehta
+                        </strong>
+
+                        <span>
+                            • Alumni
+                        </span>
+
+                        <span>
+                            • 1 hour ago
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Best roadmap for Web Development?
+                    </h3>
+
+
+                    <p>
+                        If you're starting web development in 2026,
+                        focus on HTML, CSS, JavaScript and then move
+                        towards frameworks and backend development.
+                    </p>
+
+
+                    <div class="discussion-tags">
+
+                        <span>Development</span>
+
+                        <span>Career</span>
+
+                    </div>
+
+
+                    <div class="discussion-actions">
+
+                        <button>
+                            💬 8 Answers
+                        </button>
+
+                        <button>
+                            ♡ Helpful
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DISCUSSION 3 -->
+
+            <div class="discussion-card">
+
+                <div class="discussion-avatar pink">
+                    R
+                </div>
+
+
+                <div class="discussion-content">
+
+                    <div class="discussion-meta">
+
+                        <strong>
+                            Rahul Sharma
+                        </strong>
+
+                        <span>
+                            • Senior Student
+                        </span>
+
+                        <span>
+                            • 3 hours ago
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        AI/ML vs Web Development — which should I choose?
+                    </h3>
+
+
+                    <p>
+                        Both fields have great opportunities. The right
+                        choice depends on your interests, strengths and
+                        the type of projects you enjoy building.
+                    </p>
+
+
+                    <div class="discussion-tags">
+
+                        <span>AI / ML</span>
+
+                        <span>Career</span>
+
+                    </div>
+
+
+                    <div class="discussion-actions">
+
+                        <button>
+                            💬 15 Answers
+                        </button>
+
+                        <button>
+                            ♡ Helpful
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<script>
+
+const savedName = localStorage.getItem("userName");
+const savedRole = localStorage.getItem("userRole");
+
+if (savedName) {
+
+    document.getElementById("userName").textContent = savedName;
+
+}
+
+if (savedRole) {
+
+    document.getElementById("userRole").textContent =
+        savedRole + " Student";
+
+}
+
+</script>
+
+
+</body>
+
+</html>

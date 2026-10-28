@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | MentorSphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a href="dashboard.html" class="sidebar-logo">
+            <div class="logo-icon">M</div>
+            <span>MentorSphere</span>
+        </a>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="mentor.html">
+                <span>👨‍🏫</span>
+                Find Mentors
+            </a>
+
+            <a href="discussion.html">
+                <span>💬</span>
+                Discussions
+            </a>
+
+            <a href="resource.html">
+                <span>📚</span>
+                Resources
+            </a>
+
+            <a href="placement.html">
+                <span>🎯</span>
+                Placements
+            </a>
+
+            <a href="profile.html" class="active">
+                <span>👤</span>
+                My Profile
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+                <span>🔔</span>
+                Notifications
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-area">
+
+
+        <!-- TOP BAR -->
+        <div class="page-top">
+
+            <div>
+                <p class="page-label">MY ACCOUNT</p>
+                <h1>My Profile 👋</h1>
+            </div>
+
+            <button class="edit-profile-btn" id="editProfileBtn">
+                ✎ Edit Profile
+            </button>
+
+        </div>
+
+
+        <!-- PROFILE HERO -->
+        <section class="profile-hero">
+
+
+            <!-- PROFILE PHOTO -->
+            <div class="profile-photo-wrapper">
+
+                <!-- UPLOADED PHOTO -->
+                <img
+                    id="profilePreview"
+                    src=""
+                    alt="Profile Photo"
+                    style="display: none;"
+                >
+
+                <!-- DEFAULT AVATAR -->
+                <div
+                    class="profile-avatar-large"
+                    id="defaultAvatar">
+                    H
+                </div>
+
+
+                <!-- CAMERA ICON -->
+                <label
+                    for="photoUpload"
+                    class="photo-upload-icon"
+                    title="Change profile photo">
+                    📷
+                </label>
+
+
+                <!-- FILE INPUT -->
+                <input
+                    type="file"
+                    id="photoUpload"
+                    accept="image/*"
+                    hidden
+                >
+
+            </div>
+
+
+            <!-- PROFILE INFORMATION -->
+            <div class="profile-main-info">
+
+                <div class="profile-name-row">
+
+                    <h2 id="profileName">
+                        Honey
+                    </h2>
+
+                    <span
+                        class="profile-role"
+                        id="profileRole">
+                        Junior Student
+                    </span>
+
+                </div>
+
+
+                <p
+                    class="profile-email"
+                    id="profileEmail">
+                    honey@example.com
+                </p>
+
+
+                <!-- DYNAMIC INTRO -->
+                <p
+                    class="profile-bio"
+                    id="profileBio">
+
+                    Engineering student passionate about technology,
+                    machine learning and building meaningful projects.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFILE STATS -->
+        <section class="profile-stats">
+
+            <div class="profile-stat-card">
+                <strong id="channelsCount">4</strong>
+                <span>Channels Joined</span>
+            </div>
+
+            <div class="profile-stat-card">
+                <strong id="mentorsCount">5</strong>
+                <span>Mentors Connected</span>
+            </div>
+
+            <div class="profile-stat-card">
+                <strong id="questionsCount">12</strong>
+                <span>Questions Asked</span>
+            </div>
+
+            <div class="profile-stat-card">
+                <strong id="resourcesCount">18</strong>
+                <span>Resources Saved</span>
+            </div>
+
+        </section>
+
+
+        <!-- PROFILE GRID -->
+        <section class="profile-grid">
+
+
+            <!-- LEFT COLUMN -->
+            <div class="profile-column">
+
+
+                <!-- SKILLS -->
+                <div class="profile-card">
+
+                    <div class="profile-card-heading">
+
+                        <div>
+                            <h2>Skills</h2>
+                            <p>Your technical strengths</p>
+                        </div>
+
+                        <span class="profile-card-icon">
+                            ⚡
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-tags">
+
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>SQL</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LEARNING INTERESTS -->
+                <div class="profile-card">
+
+                    <div class="profile-card-heading">
+
+                        <div>
+                            <h2>Learning Interests</h2>
+                            <p>Topics you want to explore</p>
+                        </div>
+
+                        <span class="profile-card-icon">
+                            🎯
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-tags interest-tags">
+
+                        <span>AI / ML</span>
+                        <span>Backend Development</span>
+                        <span>Projects</span>
+                        <span>Placements</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT COLUMN -->
+            <div class="profile-column">
+
+
+                <!-- LEARNING GOAL -->
+                <div class="profile-card">
+
+                    <div class="profile-card-heading">
+
+                        <div>
+                            <h2>Learning Goal</h2>
+                            <p>What you're currently working towards</p>
+                        </div>
+
+                        <span class="profile-card-icon">
+                            🚀
+                        </span>
+
+                    </div>
+
+
+                    <div class="goal-box">
+
+                        <strong>
+                            Become placement ready
+                        </strong>
+
+                        <p>
+                            Improve DSA, build strong projects and prepare
+                            for software engineering opportunities.
+                        </p>
+
+
+                        <div class="goal-progress">
+                            <div class="goal-progress-fill"></div>
+                        </div>
+
+
+                        <span class="goal-progress-text">
+                            62% progress
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ABOUT -->
+                <div class="profile-card">
+
+                    <div class="profile-card-heading">
+
+                        <div>
+                            <h2>About</h2>
+                            <p>A little more about you</p>
+                        </div>
+
+                        <span class="profile-card-icon">
+                            ✦
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-list">
+
+                        <div>
+                            <span>🎓</span>
+                            <p>Engineering Student</p>
+                        </div>
+
+                        <div>
+                            <span>💻</span>
+                            <p>Interested in Software & AI</p>
+                        </div>
+
+                        <div>
+                            <span>🌱</span>
+                            <p>Actively learning and building projects</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script>
+
+    /* =========================
+       GET SAVED USER DATA
+    ========================= */
+
+    const savedName = localStorage.getItem("userName");
+    const savedEmail = localStorage.getItem("userEmail");
+    const savedRole = localStorage.getItem("userRole");
+    const savedBio = localStorage.getItem("userBio");
+    const savedPhoto = localStorage.getItem("profilePhoto");
+
+
+    /* =========================
+       ELEMENTS
+    ========================= */
+
+    const profileName =
+        document.getElementById("profileName");
+
+    const profileEmail =
+        document.getElementById("profileEmail");
+
+    const profileRole =
+        document.getElementById("profileRole");
+
+    const profileBio =
+        document.getElementById("profileBio");
+
+    const defaultAvatar =
+        document.getElementById("defaultAvatar");
+
+    const profilePreview =
+        document.getElementById("profilePreview");
+
+    const photoUpload =
+        document.getElementById("photoUpload");
+
+    const editProfileBtn =
+        document.getElementById("editProfileBtn");
+
+
+    /* =========================
+       LOAD USER NAME
+    ========================= */
+
+    if (savedName) {
+
+        profileName.textContent = savedName;
+
+        defaultAvatar.textContent =
+            savedName.charAt(0).toUpperCase();
+
+    }
+
+
+    /* =========================
+       LOAD USER EMAIL
+    ========================= */
+
+    if (savedEmail) {
+
+        profileEmail.textContent = savedEmail;
+
+    }
+
+
+    /* =========================
+       LOAD USER ROLE
+    ========================= */
+
+    if (savedRole) {
+
+        profileRole.textContent = savedRole;
+
+    }
+
+
+    /* =========================
+       LOAD USER BIO / INTRO
+    ========================= */
+
+    if (savedBio) {
+
+        profileBio.textContent = savedBio;
+
+    }
+
+
+    /* =========================
+       SHOW SAVED PHOTO
+    ========================= */
+
+    if (savedPhoto) {
+
+        profilePreview.src = savedPhoto;
+
+        profilePreview.style.display = "block";
+
+        defaultAvatar.style.display = "none";
+
+    }
+
+
+    /* =========================
+       UPLOAD / CHANGE PHOTO
+    ========================= */
+
+    photoUpload.addEventListener(
+        "change",
+        function () {
+
+            const file = this.files[0];
+
+            if (!file) return;
+
+
+            const reader = new FileReader();
+
+
+            reader.onload = function (event) {
+
+                const photoData =
+                    event.target.result;
+
+
+                profilePreview.src =
+                    photoData;
+
+                profilePreview.style.display =
+                    "block";
+
+                defaultAvatar.style.display =
+                    "none";
+
+
+                localStorage.setItem(
+                    "profilePhoto",
+                    photoData
+                );
+
+            };
+
+
+            reader.readAsDataURL(file);
+
+        }
+    );
+
+
+    /* =========================
+       EDIT PROFILE
+    ========================= */
+
+    editProfileBtn.addEventListener(
+        "click",
+        function () {
+
+
+            const newName = prompt(
+                "Enter your name:",
+                profileName.textContent
+            );
+
+
+            if (
+                newName &&
+                newName.trim() !== ""
+            ) {
+
+                const cleanName =
+                    newName.trim();
+
+
+                profileName.textContent =
+                    cleanName;
+
+
+                defaultAvatar.textContent =
+                    cleanName
+                    .charAt(0)
+                    .toUpperCase();
+
+
+                localStorage.setItem(
+                    "userName",
+                    cleanName
+                );
+
+            }
+
+
+            const newEmail = prompt(
+                "Enter your email:",
+                profileEmail.textContent
+            );
+
+
+            if (
+                newEmail &&
+                newEmail.trim() !== ""
+            ) {
+
+                const cleanEmail =
+                    newEmail.trim();
+
+
+                profileEmail.textContent =
+                    cleanEmail;
+
+
+                localStorage.setItem(
+                    "userEmail",
+                    cleanEmail
+                );
+
+            }
+
+
+            const newRole = prompt(
+                "Enter your role:",
+                profileRole.textContent
+            );
+
+
+            if (
+                newRole &&
+                newRole.trim() !== ""
+            ) {
+
+                const cleanRole =
+                    newRole.trim();
+
+
+                profileRole.textContent =
+                    cleanRole;
+
+
+                localStorage.setItem(
+                    "userRole",
+                    cleanRole
+                );
+
+            }
+
+
+            const newBio = prompt(
+                "Write your introduction:",
+                profileBio.textContent
+            );
+
+
+            if (
+                newBio &&
+                newBio.trim() !== ""
+            ) {
+
+                const cleanBio =
+                    newBio.trim();
+
+
+                profileBio.textContent =
+                    cleanBio;
+
+
+                localStorage.setItem(
+                    "userBio",
+                    cleanBio
+                );
+
+            }
+
+
+            alert(
+                "Profile updated successfully!"
+            );
+
+        }
+    );
+
+
+    /* =========================
+       LOAD PROFILE STATS
+    ========================= */
+
+    const savedChannels =
+        localStorage.getItem("channelsJoined");
+
+    const savedMentors =
+        localStorage.getItem("mentorsConnected");
+
+    const savedQuestions =
+        localStorage.getItem("questionsAsked");
+
+    const savedResources =
+        localStorage.getItem("resourcesSaved");
+
+
+    if (savedChannels) {
+
+        document.getElementById(
+            "channelsCount"
+        ).textContent = savedChannels;
+
+    }
+
+
+    if (savedMentors) {
+
+        document.getElementById(
+            "mentorsCount"
+        ).textContent = savedMentors;
+
+    }
+
+
+    if (savedQuestions) {
+
+        document.getElementById(
+            "questionsCount"
+        ).textContent = savedQuestions;
+
+    }
+
+
+    if (savedResources) {
+
+        document.getElementById(
+            "resourcesCount"
+        ).textContent = savedResources;
+
+    }
+
+</script>
+
+</body>
+
+</html>

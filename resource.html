@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resources | MentorSphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a href="dashboard.html" class="sidebar-logo">
+            <div class="logo-icon">M</div>
+            <span>MentorSphere</span>
+        </a>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="mentor.html">
+                <span>👨‍🏫</span>
+                Find Mentors
+            </a>
+
+            <a href="discussion.html">
+                <span>💬</span>
+                Discussions
+            </a>
+
+            <!-- RESOURCES ACTIVE -->
+            <a href="resource.html" class="active">
+                <span>📚</span>
+                Resources
+            </a>
+
+            <a href="placement.html">
+                <span>🎯</span>
+                Placements
+            </a>
+
+            <!-- PROFILE -->
+            <a href="profile.html">
+                <span>👤</span>
+                Profile
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="#">
+                <span>🔔</span>
+                Notifications
+            </a>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN AREA -->
+    <main class="main-area">
+
+        <!-- TOP -->
+        <div class="page-top">
+
+            <div>
+                <p class="page-label">LEARNING HUB</p>
+
+                <h1>Resources 📚</h1>
+            </div>
+
+
+            <!-- USER PROFILE -->
+            <a href="profile.html"
+               class="user-profile"
+               style="text-decoration: none; color: inherit; cursor: pointer;">
+
+                <div class="user-avatar" id="userAvatar">
+                    H
+                </div>
+
+                <div>
+                    <strong id="userName">
+                        Honey Kumari
+                    </strong>
+
+                    <span id="userRole">
+                        Senior Student
+                    </span>
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- HERO SECTION -->
+        <section class="resource-hero">
+
+            <div>
+
+                <div class="hero-badge">
+                    ✦ Learn smarter
+                </div>
+
+                <h2>
+                    Everything you need<br>
+                    <span>to keep growing.</span>
+                </h2>
+
+                <p>
+                    Explore curated notes, roadmaps, guides and
+                    learning resources shared by seniors and alumni.
+                </p>
+
+            </div>
+
+            <div class="resource-hero-icon">
+                📚
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH + FILTER -->
+        <section class="resource-toolbar">
+
+            <input
+                type="text"
+                id="resourceSearch"
+                placeholder="🔍 Search resources..."
+            >
+
+            <div class="resource-filters">
+
+                <button class="resource-filter active">
+                    All
+                </button>
+
+                <button class="resource-filter">
+                    DSA
+                </button>
+
+                <button class="resource-filter">
+                    Development
+                </button>
+
+                <button class="resource-filter">
+                    AI / ML
+                </button>
+
+                <button class="resource-filter">
+                    Placements
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION HEADING -->
+        <div class="resource-heading">
+
+            <div>
+                <h2>Recommended resources</h2>
+
+                <p>
+                    Handpicked resources to help you learn and grow.
+                </p>
+            </div>
+
+            <span class="resource-count">
+                4 resources
+            </span>
+
+        </div>
+
+
+        <!-- RESOURCE CARDS -->
+        <section class="resource-grid">
+
+
+            <!-- CARD 1 -->
+            <div class="resource-card">
+
+                <div class="resource-icon purple">
+                    📘
+                </div>
+
+                <div class="resource-content">
+
+                    <span class="resource-category">
+                        DSA
+                    </span>
+
+                    <h3>
+                        DSA Notes & Practice
+                    </h3>
+
+                    <p>
+                        Complete notes covering important data
+                        structures, algorithms and practice questions.
+                    </p>
+
+                    <div class="resource-footer">
+
+                        <span>
+                            📄 PDF Notes
+                        </span>
+
+                        <button>
+                            Open →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="resource-card">
+
+                <div class="resource-icon blue">
+                    🌐
+                </div>
+
+                <div class="resource-content">
+
+                    <span class="resource-category">
+                        Development
+                    </span>
+
+                    <h3>
+                        Web Development Roadmap
+                    </h3>
+
+                    <p>
+                        A structured roadmap covering frontend,
+                        backend, projects and deployment.
+                    </p>
+
+                    <div class="resource-footer">
+
+                        <span>
+                            🗺 Roadmap
+                        </span>
+
+                        <button>
+                            Open →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="resource-card">
+
+                <div class="resource-icon pink">
+                    🤖
+                </div>
+
+                <div class="resource-content">
+
+                    <span class="resource-category">
+                        AI / ML
+                    </span>
+
+                    <h3>
+                        Machine Learning Resources
+                    </h3>
+
+                    <p>
+                        Learn machine learning fundamentals,
+                        algorithms and build practical projects.
+                    </p>
+
+                    <div class="resource-footer">
+
+                        <span>
+                            📚 Learning Guide
+                        </span>
+
+                        <button>
+                            Open →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="resource-card">
+
+                <div class="resource-icon orange">
+                    🎯
+                </div>
+
+                <div class="resource-content">
+
+                    <span class="resource-category">
+                        Placements
+                    </span>
+
+                    <h3>
+                        Aptitude Preparation
+                    </h3>
+
+                    <p>
+                        Practice aptitude, reasoning and
+                        quantitative questions for placements.
+                    </p>
+
+                    <div class="resource-footer">
+
+                        <span>
+                            📝 Practice Set
+                        </span>
+
+                        <button>
+                            Open →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script>
+
+    const savedName = localStorage.getItem("userName");
+    const savedRole = localStorage.getItem("userRole");
+
+    const userName = document.getElementById("userName");
+    const userRole = document.getElementById("userRole");
+    const userAvatar = document.getElementById("userAvatar");
+
+
+    if (savedName) {
+
+        userName.textContent = savedName;
+
+        userAvatar.textContent =
+            savedName.charAt(0).toUpperCase();
+
+    }
+
+
+    if (savedRole) {
+
+        userRole.textContent =
+            savedRole + " Student";
+
+    }
+
+</script>
+
+</body>
+</html>

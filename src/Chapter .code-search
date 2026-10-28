@@ -1,0 +1,38 @@
+# Query: Chapter 
+# ContextLines: 1
+
+9 results - 2 files
+
+src\components\landing\HeroCinematic.jsx:
+   64  
+   65:   const jumpToChapter = (idx) => {
+   66      setActiveChapter(idx);
+
+  201  
+  202:             <span className="text-[10px] font-mono text-slate-400">Chapter {activeChapter + 1}/5</span>
+  203  
+
+  264                className={`px-3 py-1.5 rounded-xl text-left text-xs transition-all whitespace-nowrap ${
+  265:                 activeChapter === idx
+  266                    ? 'bg-blue-600 text-white font-bold shadow-md shadow-blue-500/25 ring-1 ring-blue-400'
+
+src\components\landing\ScrollStory.jsx:
+   34            <span className="text-xs font-bold text-orange-400 uppercase tracking-widest block mb-2">
+   35:             CHAPTER 01 • THE CORE PROBLEM
+   36            </span>
+
+   79            <span className="text-xs font-bold text-blue-400 uppercase tracking-widest block mb-2">
+   80:             CHAPTER 02 • THE NETWORK BRIDGE
+   81            </span>
+
+  139              <span className="text-xs font-bold text-orange-400 uppercase tracking-widest block mb-1">
+  140:               CHAPTER 03 • TOPIC-BASED HUBS
+  141              </span>
+
+  181                <TrendingUp className="w-4 h-4" />
+  182:               <span>CHAPTER 04 • CAREER HORIZON & PLACEMENTS</span>
+  183              </div>
+
+  231                <ShieldCheck className="w-4 h-4" />
+  232:               <span>CHAPTER 05 • PRIVACY-FIRST IDENTITY</span>
+  233              </div>
